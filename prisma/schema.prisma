@@ -4,6 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
+  
 }
 
 model User {
@@ -17,6 +18,7 @@ model User {
 model Stream {
   id        String   @id @default(cuid())
   title     String?
+  category  String?
   isLive    Boolean  @default(false)
   userId    String   @unique
   user      User     @relation(fields: [userId], references: [id])

@@ -2,7 +2,7 @@
   "name": "nexast-signaling",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/signalingServer.ts"
   },
   "license": "ISC",
   "type": "module",
