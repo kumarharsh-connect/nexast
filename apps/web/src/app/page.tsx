@@ -1,6 +1,8 @@
+export const dynamic = "force-dynamic";
+
 import Link from 'next/link';
 import { getLiveStreams } from '@/server/stream';
-import { Radio, Signal, Eye } from 'lucide-react';
+import { Radio, Signal } from 'lucide-react';
 import StreamCard from '@/components/stream/StreamCard';
 
 export default async function HomePage() {
