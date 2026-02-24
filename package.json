@@ -14,24 +14,14 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^25.2.3",
-    "@types/pg": "^8.16.0",
-    "@types/simple-peer": "^9.11.9",
     "dotenv": "^17.2.4",
     "prisma": "^7.4.0",
     "tls": "^0.0.1",
     "tsx": "^4.21.0"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.37.4",
     "@prisma/adapter-pg": "^7.4.0",
     "@prisma/client": "^7.4.0",
-    "@supabase/supabase-js": "^2.95.3",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.563.0",
-    "pg": "^8.18.0",
-    "react-hot-toast": "^2.6.0",
-    "simple-peer": "^9.11.1",
-    "socket.io-client": "^4.8.3",
-    "tailwind-merge": "^3.4.0"
+    "pg": "^8.18.0"
   }
 }
