@@ -11,6 +11,10 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = process.env.CLIENT_URL?.split(',') || [];
 const app = express();
 
+app.get('/', (req, res) => {
+  res.send('Nexast signaling server running 🚀');
+});
+
 app.use(
   cors({
     origin: allowedOrigins,
