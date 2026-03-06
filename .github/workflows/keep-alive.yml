@@ -1,0 +1,17 @@
+name: Keep Nexast Awake
+
+on:
+  schedule:
+    # Runs automatically at 00:00 UTC every 2 days
+    - cron: '0 0 */2 * *'
+  workflow_dispatch: # Allows you to trigger it manually
+
+jobs:
+  ping-infrastructure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Backend (Sockets)
+        run: curl -s https://nexast.onrender.com/api/health > /dev/null
+
+      - name: Ping Vercel Frontend (Supabase DB)
+        run: curl -s https://nexast.vercel.app/api/health > /dev/null

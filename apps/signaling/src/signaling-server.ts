@@ -15,6 +15,13 @@ app.get('/', (req, res) => {
   res.send('Nexast signaling server running 🚀');
 });
 
+app.get('/api/health', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'Nexast signaling server is awake',
+  });
+});
+
 app.use(
   cors({
     origin: allowedOrigins,
